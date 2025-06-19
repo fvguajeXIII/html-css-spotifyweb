@@ -26,15 +26,21 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+h3 {
+  font-size: 0.75rem;
+  font-weight: ;
+}
+
+h2{
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
 h5 {
   font-size: 0.75rem;
   font-weight: 600;
 }
 
-h3 {
-  font-size: 0.75rem;
-  font-weight: ;
-}
 
 /* Utility */
 
@@ -228,4 +234,62 @@ div.user-image {
 
 .music-box{
   padding: 0 20px;
+}
+
+#recent-list h2,
+#ai-list h2,
+#bestartist-list h2 {
+  color: var(--bg-color1);
+  padding: 20px 0;
+}
+
+#recent-list h5,
+#ai-list h5,
+#bestartist-list h5 {
+  color: var(--bg-color6);
+  font-size: 0.90rem;
+}
+
+.track h5{
+  color: var(--bg-color6);
+}
+
+.icon-overlay{
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -150%);
+}
+
+.overlay{
+  position: relative;
+  display: inline-block;
+}
+
+#recent-list .row.flex-row,
+#ai-list .row.flex-row,
+#bestartist-list .row.flex-row {
+  gap: 10px;
+  text-align: center;
+  padding: 25px 0 10px;
+}
+
+#recent-list .row .track,
+#ai-list .row .track,
+#bestartist-list .row .round-image img {
+  width: calc((100% - 10px) / 2);
+}
+
+#recent-list .row .track h3,
+#ai-list .row .track h3,
+#bestartist-list .row .track h3 {
+  padding: 10px 0;
+  color: var(--bg-color1);
+}
+
+#bestartist-list .row .track .round-image img {
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
 }

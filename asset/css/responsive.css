@@ -81,8 +81,25 @@
 
 @media screen and (min-width: 768px) {
 
+  #recent-list .row .track,
+  #ai-list .row .track,
+  #bestartist-list .row .track {
+    flex-shrink: 0;
+    width: calc((100% - 30px) / 4);
+    }
+
 }
 
 @media screen and (min-width: 992px) {
+  #recent-list .row .track,
+  #ai-list .row .track,
+  #bestartist-list .row .track {
+    flex-shrink: 0;
+    width: calc((100% - 50px) / 6);
+    }
+  
+    #col-music #recent-list .image-cover .overlay .icon-overlay {
+    font-size: 90px;
+    }
 
 }
