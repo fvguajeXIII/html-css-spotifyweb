@@ -1,0 +1,82 @@
+@media screen and (min-width: 576px) {
+  main #col-nav {
+    width: 230px;
+  }
+
+  #col-nav {
+    padding: 20px 0 5px;
+  }
+
+  .logo .logotipo.image.from-s {
+    display: flex;
+    margin: 0 0 25px 20px;
+  }
+
+  .logo .logo-small.image.only-xs {
+    display: none;
+  }
+
+  .menu li a.btn h5.from-s,
+  .menu li .flex-row {
+    display: flex;
+    gap: 10px;
+  }
+
+  ul.menu img.image {
+    padding: 0;
+  }
+
+  .menu a.btn.flex-row,
+  .account .download a.btn.flex-row,
+  .account .user-image a.btn.flex-row {
+    display: flex;
+    justify-content: flex-start;
+    padding: 7px 0 7px 20px;
+  }
+
+  .playlist.from-s {
+    display: flex;
+    margin: 18px 0 0 20px;
+    color: var(--bg-color6);
+    padding: 5px 0 0;
+  }
+
+  .playlist ul.list > li {
+    padding: 7px 0;
+  }
+
+  .playlist .add {
+    padding: 5px 0;
+  }
+
+  .playlist .add i {
+    font-size: 38px;
+    margin: 5px 0;
+  }
+
+  .playlist .add .flex-row {
+    align-items: center;
+  }
+
+  #col-nav .account .download a.btn > h5.from-s,
+  #col-nav .account .user-image a.btn > h3.from-s,
+  #col-nav .account .download .flex-row,
+  #col-nav .account .user-image .flex-row,
+  .playlist .add a.btn.flex-row {
+    display: flex;
+    gap: 10px;
+  }
+
+  .account > hr.from-s {
+    display: flex;
+    margin: 0 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 992px) {
+
+}

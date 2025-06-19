@@ -20,19 +20,106 @@
     />
     <!-- CSS -->
     <link rel="stylesheet" href="asset/css/style.css" />
+    <link rel="stylesheet" href="asset/css/responsive.css" />
     <title>Spotify Web</title>
   </head>
   <body>
     <main id="main-container" class="flex-row">
       <!-- Sidenav Bar -->
+      <!-- Logo -->
       <nav id="col-nav" class="flex-column">
         <div class="logo">
-          <img src="asset/img/logo.svg" alt="logo" class="logo image" />
+          <img
+            src="asset/img/logo.svg"
+            alt="logo"
+            class="logotipo image from-s"
+          />
           <img
             src="asset/img/logo-small.svg"
             alt="logo small"
-            class="logo-small image"
+            class="logo-small image only-xs"
           />
+        </div>
+        <!-- Menù -->
+        <ul class="menu">
+          <li class="active">
+            <a href="#" target="_blank" class="btn flex-row">
+              <img src="asset/img/home.svg" alt="home" class="image" />
+              <h5 class="from-s">Home</h5>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" class="btn flex-row">
+              <img src="asset/img/search.svg" alt="search" class="image" />
+              <h5 class="from-s">Search</h5>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" class="btn flex-row">
+              <img src="asset/img/libreria.svg" alt="library" class="image" />
+              <h5 class="from-s">Libreria</h5>
+            </a>
+          </li>
+        </ul>
+        <div class="playlist from-s flex-column">
+          <h4>Playlist</h4>
+          <div class="add">
+            <a href="#" target="_blank" class="btn flex-row">
+              <i class="fa-solid fa-square-plus"></i>
+              <h5>Crea Playlist</h5>
+            </a>
+          </div>
+          <ul class="list">
+            <li>
+              <a href="#" target="_blank" class="btn">
+                <h5>Nome Playlist</h5>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="btn">
+                <h5>Nome Playlist</h5>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="btn">
+                <h5>Nome Playlist</h5>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="btn">
+                <h5>Nome Playlist</h5>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="btn">
+                <h5>Nome Playlist</h5>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" class="btn">
+                <h5>Nome Playlist</h5>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="account">
+          <div class="download">
+            <a href="#" target="_blank" class="btn flex-row">
+              <img
+                src="asset/img/download.svg"
+                alt="Installa App"
+                class="image"
+              />
+              <h5 class="from-s">Installa App</h5>
+            </a>
+          </div>
+          <hr class="from-s" />
+          <div class="user-image">
+            <a href="#" target="_blank" class="btn flex-row">
+              <img src="asset/img/profile.svg" alt="profilo" class="image" />
+              <h3>John Doe</h3>
+            </a>
+          </div>
         </div>
       </nav>
     </main>

@@ -1,10 +1,10 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-#main-container{
+#main-container {
   height: calc(100vh - 90px);
 }
 
@@ -22,33 +22,145 @@
 
 /* Tipografia */
 
-body{
-  font-family: 'Montserrat', sans-serif;
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h5 {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 0.75rem;
+  font-weight: ;
 }
 
 /* Utility */
 
-.flex-row{
+.flex-row {
   display: flex;
 }
 
-.flex-column{
+.flex-column {
   display: flex;
   flex-direction: column;
 }
 
-.image{
+.image {
   display: block;
   width: 100%;
 }
 
 /* Common */
 
+a.btn {
+  all: unset;
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+}
+
 /* Sidenav Bar */
 
-#col-nav{
+#col-nav {
   width: 50px;
   flex-shrink: 0;
   padding: 5px 0;
   background-color: var(--bg-color2);
+}
+
+.logo .logotipo.image.from-s {
+  display: none;
+}
+
+.logo .logo-small.image.only-xs {
+  display: flex;
+}
+
+.logo .logotipo {
+  width: 130px;
+}
+
+.logo .logo-small {
+  width: 30px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+ul.menu li a.btn {
+  color: var(--bg-color6);
+}
+
+#col-nav ul.menu > li a.btn {
+  border-left: 2px solid transparent;
+}
+
+.menu li a img {
+  width: 25px;
+}
+
+.menu li .btn h5.from-s,
+.account .user-image h3.from-s {
+  display: none;
+}
+
+ul.menu li a > img {
+  padding-bottom: 10px;
+}
+
+#col-nav li.active {
+  border-left: 2px solid #adff2f;
+}
+
+.account > div.download,
+div.user-image {
+  padding: 10px 0;
+}
+
+.menu li a.btn,
+.account .download a.btn.flex-row,
+.account .user-image .flex-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.playlist.from-s {
+  display: none;
+  overflow: hidden;
+}
+
+.playlist ul.list {
+  overflow-y: auto;
+}
+
+.account .download a.btn img{
+  width: 18px;
+}
+
+.account hr.from-s{
+  display: none;
+}
+
+.account{
+  margin-top: auto;
+}
+
+.user-image h3{
+  color: var(--bg-color1);
+}
+
+.account .download .btn h5.from-s{
+  display: none;
+  color: var(--bg-color5);
+}
+
+.account .user-image img.image{
+  border-radius: 50px;
+  background-color: var(--bg-color5);
+  width: 25px;
+  height: 25px;
 }
