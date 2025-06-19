@@ -52,6 +52,18 @@ h3 {
   width: 100%;
 }
 
+.justify-center{
+  justify-content: center;
+}
+
+.align-center{
+  align-items: center;
+}
+
+.wrap{
+  flex-wrap: wrap;
+}
+
 /* Common */
 
 a.btn {
@@ -203,4 +215,18 @@ div.user-image {
   left: 50%;
   transform: translateX(-50%);
   color: var(--bg-color7);
+  margin-top: 5px;
+}
+
+/* Music Space Bottom */
+
+#col-music .music-box ul.flex-row{
+  color: var(--bg-color6);
+  padding: 20px 0;
+  gap: 40px 25px;
+  text-transform: uppercase;
+}
+
+.music-box{
+  padding: 0 20px;
 }
