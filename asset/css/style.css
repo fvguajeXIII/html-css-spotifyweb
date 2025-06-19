@@ -3,3 +3,52 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+#main-container{
+  height: calc(100vh - 90px);
+}
+
+/* Colors */
+
+:root {
+  --bg-color1: #ffffff;
+  --bg-color2: #000000;
+  --bg-color3: #141922;
+  --bg-color4: #282828;
+  --bg-color5: #808080;
+  --bg-color6: #a3a3a3;
+  --bg-color7: #adff2f;
+}
+
+/* Tipografia */
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Utility */
+
+.flex-row{
+  display: flex;
+}
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+
+.image{
+  display: block;
+  width: 100%;
+}
+
+/* Common */
+
+/* Sidenav Bar */
+
+#col-nav{
+  width: 50px;
+  flex-shrink: 0;
+  padding: 5px 0;
+  background-color: var(--bg-color2);
+}
