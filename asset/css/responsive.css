@@ -77,6 +77,11 @@
     top: 0;
     left: 230px;
   }
+
+   #footer-container img.image {
+    justify-content: center;
+    width: 39px;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -98,8 +103,17 @@
     width: calc((100% - 50px) / 6);
     }
   
-    #col-music #recent-list .image-cover .overlay .icon-overlay {
-    font-size: 90px;
+  #col-music #recent-list .image-cover .overlay .icon-overlay {
+  font-size: 90px;
+    }
+
+  #volume .flex-row {
+    gap: 18px;
+    }
+
+  #footer-container #audio-system {
+    width: 520px;
+    flex-grow: 0;
     }
 
 }

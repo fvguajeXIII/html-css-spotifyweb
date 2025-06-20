@@ -25,15 +25,14 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
+h2{
+  font-size: 1.25rem;
+  font-weight: 800;
+}
 
 h3 {
   font-size: 0.75rem;
   font-weight: 900;
-}
-
-h2{
-  font-size: 1.25rem;
-  font-weight: 800;
 }
 
 h5 {
@@ -41,6 +40,11 @@ h5 {
   font-weight: 600;
 }
 
+h6 {
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--bg-color6);
+}
 
 /* Utility */
 
@@ -70,6 +74,14 @@ h5 {
   flex-wrap: wrap;
 }
 
+.space-btw{
+  justify-content: space-between;
+}
+
+.space-around{
+  justify-content: space-around;
+}
+
 /* Common */
 
 a.btn {
@@ -79,6 +91,69 @@ a.btn {
 
 li {
   list-style-type: none;
+}
+
+.progress {
+    cursor: pointer;
+}
+
+/* Hover */
+
+#col-music .upgrade a.btn:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+#col-music li > a.btn h4:hover,
+#col-nav li >a.btn:hover {
+    transition: color 0.5s;
+    color: var(--bg-color1);
+}
+
+#col-music #recent-list .image-cover div.overlay:hover,
+#col-music #ai-list .image-cover div.overlay:hover,
+#col-music #bestartist-list .image-cover.round-image div.overlay:hover {
+    opacity: 1;
+}
+
+#col-nav ul.menu > li a.btn:hover {
+    color: var(--bg-color1);
+    border-left: 2px solid var(--bg-color7);
+}
+
+#col-nav .account .download a.btn h5:hover {
+    color: var(--bg-color1);
+}
+
+#col-nav .playlist .add a.btn > h5:hover {
+    color: var(--bg-color1);
+}
+
+#footer-container #track a.btn > h6:hover {
+    color: var(--bg-color1);
+    text-decoration: underline;
+}
+
+#footer-container #track .icone-like-add > a.btn:hover,
+#footer-container #track .icone-like-add a.btn {
+    color:var(--bg-color1)
+}
+
+#footer-container #audio-system .system-top li.play:hover {
+    transform: scale(1.2);
+    transition: scale 0.5s;
+}
+
+#footer-container #audio-system .system-bottom .time-progress-bar:hover::before,
+#footer-container #volume .volume-progress-bar:hover::before {
+    background-color: var(--bg-color7);
+    cursor: pointer;
+}
+
+#footer-container #audio-system .system-bottom .time-progress-bar:hover::after,
+#footer-container #volume .volume-progress-bar:hover::after {
+    display: block;
+    cursor: pointer;
 }
 
 /* Sidenav Bar */
@@ -254,17 +329,41 @@ div.user-image {
   color: var(--bg-color6);
 }
 
-.icon-overlay{
+#col-music #recent-list .image-cover,
+#col-music #ai-list .image-cover,
+#col-music #bestartist-list .image-cover.round-image {
+  position: relative;
+}
+
+#col-music #recent-list .image-cover div.overlay,
+#col-music #ai-list .image-cover div.overlay,
+#col-music #bestartist-list .image-cover.round-image div.overlay {
+  background-color: rgba(0, 0, 0, .4);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+}
+
+#col-music #recent-list .image-cover .overlay .icon-overlay,
+#col-music #ai-list .image-cover .overlay .icon-overlay,
+#col-music #bestartist-list .image-cover.round-image .overlay .icon-overlay {
   color: white;
+  font-size: 40px;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -150%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-.overlay{
-  position: relative;
-  display: inline-block;
+#col-music #bestartist-list .image-cover.round-image div.overlay {
+  border-radius: 50%;
 }
 
 #recent-list .row.flex-row,
@@ -292,4 +391,118 @@ div.user-image {
   width: 100%;
   border-radius: 50%;
   object-fit: cover;
+}
+
+
+#footer-container {
+  max-width: 100%;
+  height: 90px;
+  background-color: var(--bg-color4);
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 10px;
+}
+
+#footer-container.flex-row {
+  gap: 20px;
+}
+
+#footer-container #track,
+#footer-container #volume {
+  width: 25%;
+}
+
+#footer-container #volume,
+#footer-container #track a.btn > h5 {
+  color: var(--bg-color1);
+}
+
+#footer-container #track .icone-like-add a.btn {
+  color: var(--bg-color6);
+}
+
+#footer-container img.image {
+  justify-content: center;
+  width: 28px;
+}
+
+#footer-container #track .icone-like-add i,
+#footer-container #volume .icone-volume i {
+  font-size: 13px;
+}
+
+#footer-container #track.flex-row.align-center,
+#footer-container #audio-system .system-bottom.flex-row.space-btw.align-center,
+#footer-container #volume .icone-volume.flex-row {
+  gap: 10px;
+}
+
+#footer-container #track .icone-like-add.flex-column > a.btn {
+  padding: 0;
+}
+
+#footer-container #audio-system {
+  width: 20%;
+  flex-grow: 1;
+  color: var(--bg-color1);
+  display: flex;
+}
+
+#footer-container #audio-system .system-top .flex-row li.play {
+  padding: 0 10px;
+  font-size: 30px;
+}
+
+#footer-container #audio-system .system-top .flex-row li {
+  font-size: 18px;
+}
+
+#footer-container #audio-system .system-top .flex-row {
+  justify-content: center;
+  gap: 20px;
+}
+
+
+#audio-system .system-bottom .time-progress-bar,
+#volume > .volume-progress-bar {
+  background-color: var(--bg-color6);
+  width: 100%;
+  height: 4px;
+  border-radius: 50px;
+}
+
+#footer-container #audio-system .system-bottom .time-progress-bar::before,
+#footer-container #volume .volume-progress-bar::before {
+  content: '';
+  background-color: var(--bg-color1);
+  position: absolute;
+  width: 25%;
+  height: 4px;
+  border-radius: 50px;
+}
+
+#audio-system .system-bottom.flex-row.space-btw.align-center div.time-progress-bar,
+#volume div.volume-progress-bar {
+  position: relative;
+}
+
+#audio-system .system-bottom .time-progress-bar::after,
+#volume .volume-progress-bar::after {
+  content: '';
+  position: absolute;
+  left: 25%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50px;
+  background-color: var(--bg-color1);
+  display: none;
+}
+
+#volume.flex-row.align-center {
+  gap: 6px;
+  justify-content: flex-end;
 }
